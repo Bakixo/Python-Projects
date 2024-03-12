@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<div class="jumbotron text-center">
+    <h3>Burada bana ait herşeyi bulabilirsiniz.</h3>
+    <p>Beğendiğiniz projeler olursa geliştiriceler olarak hem kullanabilir hemde insanlarla paylaşabilirsiniz</p>
+</div>
+<ul>
+    {% for article in articles %}
+    <li>
+       başlık : {{article.title}}, numara : {{article.numara}}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock body %}
+

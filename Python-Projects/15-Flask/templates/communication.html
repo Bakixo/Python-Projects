@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block iletisim %}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/navbar.css') }}">
+</head>
+<div class="container text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/twitter_icon.png') }}" alt="Twitter">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/linkedin_icon.png') }}" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/youtube_icon.png') }}" alt="YouTube">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://medium.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/medium_icon.png') }}" alt="Medium">
+                </a>
+            </div>
+        </div>
+</div>
+
+{% endblock %}

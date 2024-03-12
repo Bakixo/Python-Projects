@@ -1,0 +1,8 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Navbar üzerine gelindiğinde metin rengini değiştirmek için */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: yellow; /* İstediğiniz rengi burada belirtebilirsiniz */
+}
